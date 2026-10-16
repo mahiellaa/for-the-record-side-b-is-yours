@@ -2,7 +2,7 @@
    Keep the punctuation and quotes around each field.
    Sample letters below are prompts/placeholders, not claims about your memories. */
 window.ARCHIVE = {
-  name: 'for the record.',
+  name: 'for the record, side b is yours',
   subtitle: 'everything i meant, and everything i couldn’t say.',
   intro: 'an incomplete account of someone i knew, someone i miss, and all the music in between.',
   entries: [
