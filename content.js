@@ -3,8 +3,8 @@
    Sample letters below are prompts/placeholders, not claims about your memories. */
 window.ARCHIVE = {
   name: 'for the record, side b is yours',
-  subtitle: 'everything i meant, and everything i couldn’t say.',
-  intro: 'an incomplete account of someone i knew, someone i miss, and all the music in between.',
+  subtitle: 'did you ever listen to the playlist?',
+  intro: 'i keep finding new ways to say the same thing',
   entries: [
     {
       date: 'LETTER 001 / UNDATED',
