@@ -73,8 +73,8 @@
 
     if (!D) return;
 
-    if ($('#brand')) $('#brand').textContent = D.name || 'she makes me weak';
-    document.title = D.name || 'for the record, side b is yours';
+    if ($('#brand')) $('#brand').textContent = D.name || 'babe, you look so cool';
+    document.title = D.name || 'babe, you look so cool';
     if ($('#heroSubtitle')) $('#heroSubtitle').textContent = D.subtitle || '';
     if ($('#heroIntro')) $('#heroIntro').textContent = D.intro || '';
 
