@@ -1,1 +1,175 @@
-(()=>{'use strict';const D=window.ARCHIVE;const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];const safe=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const url=s=>/^https?:\/\//i.test(s||'')?s:'#';let currentView='foyer',activeTrack=-1;function show(view){if(!$('#'+view))return;currentView=view;$$('.view').forEach(e=>e.classList.toggle('active',e.id===view));$$('.nav').forEach(e=>e.classList.toggle('active',e.dataset.view===view));window.scrollTo({top:0,behavior:'smooth'});location.hash=view}$$('[data-view]').forEach(e=>e.addEventListener('click',()=>show(e.dataset.view)));window.addEventListener('hashchange',()=>{const v=location.hash.slice(1);if(v&&v!==currentView)show(v)});if(location.hash.slice(1)&&$('#'+location.hash.slice(1)))show(location.hash.slice(1));$('#brand').textContent=D.name;document.title=D.name;$('#heroTitle').innerHTML='for the record,<br><i>side b</i> is yours';$('#heroSubtitle').textContent=D.subtitle;$('#heroIntro').textContent=D.intro;const entryList=$('#entryList'),reader=$('#entryReader');D.entries.forEach((e,i)=>{const b=document.createElement('button');b.className='entry-button';b.innerHTML='<small>'+safe(e.date)+'</small><strong>'+safe(e.title)+'</strong><span>'+safe(e.excerpt)+'</span>';b.onclick=()=>{reader.innerHTML='<p class="micro">'+safe(e.date)+' / ENTRY '+String(i+1).padStart(2,'0')+'</p><h3>'+safe(e.title)+'</h3>'+e.body.map(p=>'<p>'+safe(p)+'</p>').join('');$$('.entry-button').forEach(x=>x.classList.remove('active'));b.classList.add('active')};entryList.append(b)});const trackList=$('#trackList'),trackMemory=$('#trackMemory');function openTrack(i){const t=D.tracks[i];if(!t)return;activeTrack=i;trackMemory.innerHTML='<span class="micro">SIDE '+safe(t.side)+' / ANNOTATION '+String(i+1).padStart(2,'0')+'</span><h3>'+safe(t.title)+'</h3><p>'+safe(t.memory)+'</p><a href="'+safe(url(t.url))+'" target="_blank" rel="noopener noreferrer">LISTEN ELSEWHERE ↗</a>';$$('.track').forEach(x=>x.classList.toggle('active',Number(x.dataset.index)===i))}function renderTracks(){const q=$('#trackSearch').value.toLowerCase(),side=$('#sideFilter').value;trackList.innerHTML='';D.tracks.forEach((t,i)=>{if(side!=='all'&&t.side!==side)return;if(![t.title,t.artist,t.memory].join(' ').toLowerCase().includes(q))return;const b=document.createElement('button');b.className='track'+(i===activeTrack?' active':'');b.dataset.index=i;b.innerHTML='<span class="num">'+String(i+1).padStart(2,'0')+'</span><span class="track-name">'+safe(t.title)+'<small>'+safe(t.artist)+'</small></span><span class="side">'+safe(t.side)+'</span>';b.onclick=()=>openTrack(i);trackList.append(b)});if(!trackList.children.length)trackList.innerHTML='<p class="micro" style="padding:18px">NO MATCHING RECORDS</p>'}$('#trackSearch').addEventListener('input',renderTracks);$('#sideFilter').addEventListener('change',renderTracks);renderTracks();$('#vinyl').addEventListener('click',e=>{e.currentTarget.classList.toggle('playing');e.currentTarget.setAttribute('aria-pressed',String(e.currentTarget.classList.contains('playing')))});$('#randomTrack').onclick=()=>{if(!D.tracks.length)return;const i=Math.floor(Math.random()*D.tracks.length);openTrack(i);$('#trackSearch').value='';$('#sideFilter').value='all';renderTracks()};$('#tarot').onclick=()=>{if(!D.tracks.length)return;const i=Math.floor(Math.random()*D.tracks.length),t=D.tracks[i];$('#tarot').classList.remove('drawn');void $('#tarot').offsetWidth;$('#tarot').classList.add('drawn');$('#tarotResult').textContent=t.title+' — '+t.artist+'. '+t.memory;openTrack(i)};const secret=$('#secret');$$('[data-secret]').forEach(e=>e.addEventListener('click',()=>{$('#secretText').textContent=e.dataset.secret;secret.classList.add('visible')}));$('#secretClose').onclick=()=>secret.classList.remove('visible');$('#lights').onclick=()=>{document.body.classList.toggle('dimmed');$('#lights').textContent=document.body.classList.contains('dimmed')?'✷ turn the lights up':'✷ dim the lights'};$('#ambience').onclick=()=>{document.body.classList.toggle('dimmed');$('#ambience span').textContent=document.body.classList.contains('dimmed')?'light room':'dim room'};})();
+
+(() => {
+  'use strict';
+
+  function initialize() {
+    const D = window.ARCHIVE;
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => [...document.querySelectorAll(selector)];
+    const safe = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[char]);
+    const url = (value) => /^https?:\/\//i.test(value || '') ? value : '#';
+
+    if (!D) {
+      console.error('FOR THE RECORD: content.js did not load. Check that window.ARCHIVE is defined.');
+    }
+
+    let currentView = 'foyer';
+    let activeTrack = -1;
+
+    function show(view) {
+      const destination = $('#' + view);
+      if (!destination || !destination.classList.contains('view')) return;
+      currentView = view;
+      $$('.view').forEach((element) => element.classList.toggle('active', element.id === view));
+      $$('.nav').forEach((element) => element.classList.toggle('active', element.dataset.view === view));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (location.hash !== '#' + view) location.hash = view;
+    }
+
+    $$('[data-view]').forEach((element) => {
+      element.addEventListener('click', (event) => {
+        event.preventDefault();
+        show(element.dataset.view);
+      });
+    });
+
+    window.addEventListener('hashchange', () => {
+      const view = location.hash.slice(1);
+      if (view && view !== currentView) show(view);
+    });
+    const initialView = location.hash.slice(1);
+    if (initialView && $('#' + initialView)?.classList.contains('view')) show(initialView);
+
+    // Navigation and decorative objects work even if content.js has an error.
+    const secret = $('#secret');
+    $$('[data-secret]').forEach((element) => element.addEventListener('click', () => {
+      if (!secret) return;
+      const message = $('#secretText');
+      if (message) message.textContent = element.dataset.secret;
+      secret.classList.add('visible');
+    }));
+    $('#secretClose')?.addEventListener('click', () => secret?.classList.remove('visible'));
+    $('#lights')?.addEventListener('click', () => {
+      document.body.classList.toggle('dimmed');
+      $('#lights').textContent = document.body.classList.contains('dimmed')
+        ? '✷ turn the lights up' : '✷ dim the lights';
+    });
+    $('#ambience')?.addEventListener('click', () => {
+      document.body.classList.toggle('dimmed');
+      const label = $('#ambience span');
+      if (label) label.textContent = document.body.classList.contains('dimmed') ? 'light room' : 'dim room';
+    });
+    $('#vinyl')?.addEventListener('click', (event) => {
+      const record = event.currentTarget;
+      record.classList.toggle('playing');
+      record.setAttribute('aria-pressed', String(record.classList.contains('playing')));
+    });
+
+    // Always highlight SIDE B, not the final word of the title.
+    const heroTitle = $('#heroTitle');
+    if (heroTitle) heroTitle.innerHTML = 'for the record,<br><i>side b</i> is yours';
+
+    if (!D) return;
+
+    if ($('#brand')) $('#brand').textContent = D.name || 'for the record, side b is yours';
+    document.title = D.name || 'for the record, side b is yours';
+    if ($('#heroSubtitle')) $('#heroSubtitle').textContent = D.subtitle || '';
+    if ($('#heroIntro')) $('#heroIntro').textContent = D.intro || '';
+
+    const entryList = $('#entryList');
+    const reader = $('#entryReader');
+    if (entryList && reader) {
+      (Array.isArray(D.entries) ? D.entries : []).forEach((entry, index) => {
+        const button = document.createElement('button');
+        button.className = 'entry-button';
+        button.innerHTML = '<small>' + safe(entry.date) + '</small>' +
+          '<strong>' + safe(entry.title) + '</strong>' +
+          '<span>' + safe(entry.excerpt) + '</span>';
+        button.addEventListener('click', () => {
+          const paragraphs = Array.isArray(entry.body) ? entry.body : [entry.body || ''];
+          reader.innerHTML = '<p class="micro">' + safe(entry.date) +
+            ' / ENTRY ' + String(index + 1).padStart(2, '0') + '</p>' +
+            '<h3>' + safe(entry.title) + '</h3>' +
+            paragraphs.map((paragraph) => '<p>' + safe(paragraph) + '</p>').join('');
+          $$('.entry-button').forEach((item) => item.classList.remove('active'));
+          button.classList.add('active');
+        });
+        entryList.append(button);
+      });
+    }
+
+    const tracks = Array.isArray(D.tracks) ? D.tracks : [];
+    const trackList = $('#trackList');
+    const trackMemory = $('#trackMemory');
+    const search = $('#trackSearch');
+    const sideFilter = $('#sideFilter');
+
+    function openTrack(index) {
+      const track = tracks[index];
+      if (!track || !trackMemory) return;
+      activeTrack = index;
+      trackMemory.innerHTML = '<span class="micro">SIDE ' + safe(track.side) +
+        ' / ANNOTATION ' + String(index + 1).padStart(2, '0') + '</span>' +
+        '<h3>' + safe(track.title) + '</h3>' +
+        '<p>' + safe(track.memory) + '</p>' +
+        '<a href="' + safe(url(track.url)) + '" target="_blank" rel="noopener noreferrer">LISTEN ELSEWHERE ↗</a>';
+      $$('.track').forEach((element) => element.classList.toggle('active', Number(element.dataset.index) === index));
+    }
+
+    function renderTracks() {
+      if (!trackList) return;
+      const query = (search?.value || '').toLowerCase();
+      const side = sideFilter?.value || 'all';
+      trackList.innerHTML = '';
+      tracks.forEach((track, index) => {
+        if (side !== 'all' && track.side !== side) return;
+        if (![track.title, track.artist, track.memory].join(' ').toLowerCase().includes(query)) return;
+        const button = document.createElement('button');
+        button.className = 'track' + (index === activeTrack ? ' active' : '');
+        button.dataset.index = index;
+        button.innerHTML = '<span class="num">' + String(index + 1).padStart(2, '0') + '</span>' +
+          '<span class="track-name">' + safe(track.title) + '<small>' + safe(track.artist) + '</small></span>' +
+          '<span class="side">' + safe(track.side) + '</span>';
+        button.addEventListener('click', () => openTrack(index));
+        trackList.append(button);
+      });
+      if (!trackList.children.length) {
+        trackList.innerHTML = '<p class="micro" style="padding:18px">NO MATCHING RECORDS</p>';
+      }
+    }
+
+    search?.addEventListener('input', renderTracks);
+    sideFilter?.addEventListener('change', renderTracks);
+    renderTracks();
+
+    $('#randomTrack')?.addEventListener('click', () => {
+      if (!tracks.length) return;
+      const index = Math.floor(Math.random() * tracks.length);
+      if (search) search.value = '';
+      if (sideFilter) sideFilter.value = 'all';
+      renderTracks();
+      openTrack(index);
+    });
+
+    $('#tarot')?.addEventListener('click', () => {
+      if (!tracks.length) return;
+      const index = Math.floor(Math.random() * tracks.length);
+      const track = tracks[index];
+      const tarot = $('#tarot');
+      tarot.classList.remove('drawn');
+      void tarot.offsetWidth;
+      tarot.classList.add('drawn');
+      if ($('#tarotResult')) $('#tarotResult').textContent =
+        track.title + ' — ' + track.artist + '. ' + track.memory;
+      openTrack(index);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize, { once: true });
+  } else {
+    initialize();
+  }
+})();
