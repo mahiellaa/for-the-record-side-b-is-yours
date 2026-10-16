@@ -7,7 +7,7 @@ window.ARCHIVE = {
   intro: 'i keep finding new ways to say the same thing',
   entries: [
     {
-      date: 'LETTER 001 / UNDATED',
+      date: 'LETTER 001 / october 14, 2026',
       title: 'on missing you',
       excerpt: 'the ordinary hours are the worst of it.',
       body: [
