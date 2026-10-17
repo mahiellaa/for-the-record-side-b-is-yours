@@ -7,12 +7,87 @@ window.ARCHIVE = {
   intro: 'i keep finding new ways to say the same thing',
   entries: [
     {
-      date: 'LETTER 001 / october 14, 2026',
-      title: 'on missing you',
-      excerpt: 'the ordinary hours are the worst of it.',
+      date: 'LETTER 001 / undated',
+      title: 'famous last words',
+      excerpt: 'before there was anything to write about',
       body: [
-        'Write about the moments when missing her arrives without warning. The bus ride, the song, the place you used to pass without thinking.',
-        'Replace these prompts with your own recollection. You can write as many paragraphs as you need; just add another quoted paragraph separated by a comma.'
+        ' “won’t you get attached?”',
+
+    '“no, i’d never date you.”',
+
+    'i wonder if you remember that conversation on the roof. i do. though admittedly, i remember it rather differently now than i did at the time.',
+
+    'i don’t think either of us thought much of it. it was a perfectly reasonable question, considering the circumstances, and i gave what i thought was a perfectly reasonable answer. i was so sure of myself that i don’t think i even stopped to consider it.',
+
+    'no. of course not. i’d never date you.',
+
+    'i find that rather funny now.',
+
+    'not because i was lying. i wasn’t. i meant every word of it, and i think that’s what makes it so ridiculous. there was no hidden affection i was trying to suppress, no secret intention of changing your mind, no grand romantic ambition disguised as something casual.',
+
+    'i just didn’t think i’d ever feel that way about you.',
+
+    'which, to be fair, wasn’t a particularly unreasonable conclusion to arrive at. i barely knew you.',
+
+    'we’d met under circumstances that didn’t require much of us beyond enjoying each other’s company. there were no promises to make, no expectations to manage, no particular reason to imagine what might happen months later.',
+
+    'and i liked that.',
+
+    'i liked how uncomplicated it all seemed. i liked that we could laugh about things, that there was an ease to being around you, and that neither of us had to pretend we were looking for something we weren’t.',
+
+    'i remember thinking you were pretty. i remember liking your company. i remember that we got along, and that there was something amusing about how naturally we could joke with each other.',
+
+    'but i didn’t know you.',
+
+    'not in any meaningful sense.',
+
+    'i didn’t know the things that mattered to you, or the things you’d been through, or how you thought about love. i didn’t know what we’d have in common. i didn’t know what our conversations would eventually become.',
+
+    'i didn’t know any of the things that would later make that conversation on the roof seem so absurd.',
+
+    'and i think that’s what interests me most about beginnings.',
+
+    'you never really know when you’re in one.',
+
+    'sometimes you meet somebody and they become a story you tell once, if at all. sometimes they become a friend. sometimes you spend a perfectly ordinary evening with somebody and never give it another thought.',
+
+    'and sometimes, without any particular warning, you find yourself remembering the smallest details of an evening that didn’t seem especially important when it happened.',
+
+    'i don’t think that night felt like the beginning of anything.',
+
+    'i certainly didn’t treat it like one.',
+
+    'there was even that ridiculous business of me blocking you some time before, unblocking you, apologising, and eventually being able to laugh about it. hardly the opening chapter of some great romance.',
+
+    'if anything, our beginning was a little messy, a little unserious, and not particularly concerned with becoming memorable.',
+
+    'i like that about it.',
+
+    'i like that i wasn’t trying to impress you with some carefully constructed version of myself. i like that there wasn’t any pressure to make the evening significant. we were simply two people who’d met, who got along, and who thought they had a fairly good idea of what they wanted from each other.',
+
+    'i think about that version of us sometimes.',
+
+    'not with regret, exactly.',
+
+    'more with the strange affection you feel for an old photograph, when you know something about the people in it that they couldn’t possibly have known themselves.',
+
+    'there’s you, asking a question.',
+
+    'there’s me, answering it with complete confidence.',
+
+    'and there’s an entire stretch of time neither of us has lived yet.',
+
+    'i’d like to leave us there for a moment.',
+
+    'on the roof, before everything became something to think about.',
+
+    'before the songs meant anything.',
+
+    'before i had any reason to remember the question.',
+
+    '“won’t you get attached?”',
+
+    'i really thought i knew the answer'
       ]
     },
     {
