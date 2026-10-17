@@ -340,7 +340,8 @@ window.ARCHIVE = {
 
     `and the fact that i wanted to be there for so many more of them.`
       ]
-    }, {
+    }, 
+     {
 title: "the almost of it all",
 date: "LETTER 004 / over the months",
 excerpt: "i thought, perhaps, you were wondering too",
