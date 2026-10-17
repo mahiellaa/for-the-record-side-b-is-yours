@@ -267,8 +267,6 @@ window.ARCHIVE = {
     `i thought i'd already made up my mind...`,
 
     `as it turns out, i hadn't met enough of you to make it.`
-  ]
-},
       ]
     },
     {
