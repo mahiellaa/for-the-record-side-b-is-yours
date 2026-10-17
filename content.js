@@ -7,7 +7,7 @@ window.ARCHIVE = {
   intro: 'i keep finding new ways to say the same thing',
   entries: [
     {
-      date: 'LETTER 001 / undated',
+      date: 'LETTER 001 / sometime in july',
       title: 'famous last words',
       excerpt: 'before there was anything to write about',
       body: [
@@ -84,7 +84,7 @@ window.ARCHIVE = {
 
     '“won’t you get attached?”',
 
-    'i really thought i knew the answer'
+    'i thought i knew the answer'
       ]
     },
     {
