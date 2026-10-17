@@ -76,6 +76,7 @@ window.ARCHIVE = {
   ['Hanging Out to Dry', 'Florence Road', 'B', 'there was always something else i wanted to say.'],
   ['Write Me a Letter', 'beabadoobee', 'B', 'i suppose this is one way of writing back.'],
   ['The Louvre', 'Lorde', 'B', 'we were never quite a masterpiece, but i would have hung us somewhere.'],
+  ['Bobby', 'Phoebe Bridgers', 'B', 'i think i could have loved you in all the ways you never asked me to.'],
 
   // SIDE C — when i'm still thinking about you all the time
   ['Know You', 'Kevin Atwater', 'C', 'i wonder what else there was to learn.'],
