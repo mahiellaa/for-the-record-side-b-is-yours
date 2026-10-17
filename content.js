@@ -270,12 +270,75 @@ window.ARCHIVE = {
       ]
     },
     {
-      date: 'LETTER 003 / UNDATED',
-      title: 'two versions of the same evening',
-      excerpt: 'i remember it differently.',
+      date: 'LETTER 003 / now undated',
+      title: 'for future reference',
+      excerpt: 'i think i would have treated you well',
       body: [
-        'Write about a shared memory and what it meant to you, without needing to prove that it meant the same thing to her.',
-        'There is room here for anger, affection, doubt, and contradictions.'
+        `i think there is something rather revealing about the things we remember about people. and i think one of the more peculiar things about liking somebody is how much attention you begin to pay to things that would otherwise be entirely unremarkable.
+
+    not the important things, necessarily. sometimes it's something entirely inconsequential. like how you get excited seeing a doggie on the street. i remember that about you. i don't know why that particular detail has stayed with me. there are certainly more interesting things i could tell somebody about you, more substantial conversations we had, things that might better explain why i grew so fond of you. and yet, whenever i think about what i liked about being around you, i find myself returning to something as inconsequential as that.`,
+
+    `i liked seeing you excited about things. i liked that there were moments when your attention would be taken by something entirely outside our conversation. i liked watching you become interested in something, or amused by something, or momentarily distracted by something you found endearing. i suppose i liked being allowed to witness you when you weren't particularly concerned with being witnessed.`,
+
+    `there's a difference, i think, between finding somebody attractive and finding them endearing. attraction is relatively easy to explain. there are things about a person's appearance, their mannerisms, the way they carry themselves, that appeal to you. you notice them, and you think about them, and perhaps you find yourself hoping they'll notice you too. fondness is a little more difficult to account for. it's liking somebody when they're not doing anything especially impressive. it's being amused by the same dad joke you've heard them make before. it's remembering the way they reacted to something trivial. it's discovering that even the ordinary things about them have begun to interest you.`,
+
+    `yeah sure, i was attracted to you from the beginning. but now I had become fond of you. and i think that's an important distinction. because somewhere along the way, i stopped thinking exclusively about how you made me feel and started thinking about how you felt.`,
+
+    `i wanted to know when something was bothering you. i wanted to hear about your day, including the uneventful parts. i wanted to know whether you'd eaten, whether you were tired, whether something had happened that you hadn't quite found the words to explain yet. not because i thought you needed somebody to look after you. you've always struck me as perfectly capable of looking after yourself, flaws and all. i just wanted to.`,
+
+    `i remember how easily your attention could be stolen by something you found endearing. how, for a moment, whatever we were talking about could wait. there was a dog, and you were pleased about it, and apparently that was reason enough to interrupt the world for a second. i liked that, more than i ever thought to tell you. and i think that's the trouble with trying to explain why you become fond of somebody. the things that matter most are often the things that sound least impressive when you say them aloud.`,
+
+    `i could tell you that i think you're attractive. you know that already. i could tell you that you're funny, that i like talking to you, that i enjoy your company. none of that would be particularly surprising. but how the fuck do i explain that i liked watching you get excited about dogs? that i liked the way you reacted to things, even when those reactions had absolutely nothing to do with me? that i was beginning to find happiness in the simple fact of seeing you happy?`,
+
+    `i don't know when that started happening. i think, somewhere between wanting your attention and having it, i began wanting something else entirely. i wanted to know how you were doing. and i mean that in a way that goes beyond asking somebody how their day was.`,
+
+    `i wanted to know what had been bothering you. whether you'd been sleeping enough. whether something had made you laugh that day. whether there was anything you were looking forward to, or anything you were dreading. i wanted to know the things you wouldn't necessarily think to tell me. i wanted to know you well enough to notice when something was different. not because i thought you needed looking after. i never mistook you for somebody who couldn't manage their own life. I also hope you know that I don't say all this in an overbearing and unhealthily obsessive way either. i just liked the thought of being allowed to care.`,
+
+    `i liked imagining that, after a particularly exhausting day, you might want to see me. that i could buy you something to eat, listen to you complain about whatever had happened, and perhaps make you laugh before the evening was over. i liked imagining that i could be somebody you didn't have to be interesting around. you wouldn't have to have anything to say. you wouldn't have to be funny, or charming, or particularly good company. you could just be tired. and i'd still want to sit beside you.`,
+
+    `i think that's one of the things i was beginning to understand about how i felt. i didn't just like the version of you i met when we went out together. i wanted to know the version of you that existed when nobody was expecting anything. the one who gets irritated by small inconveniences. the one who has bad days for reasons she can't quite explain. the one who sometimes doesn't feel like talking. the one who probably has habits i'd find ridiculous, and opinions i'd argue with, and stories i'd eventually know well enough to interrupt.`,
+
+    `i wanted to discover all of that. i wanted to be there long enough for you to stop being a collection of interesting things i was learning and become somebody whose ordinary routines i knew by heart. and i wanted you to know me that way too.`,
+
+    `i wonder sometimes whether you realise how much there is about you to be fond of. i don't mean that in some grand, romantic sense. i don't think you're perfect. i don't know you well enough to make that claim, and even if i did, i wouldn't want to. i mean that there are things about you that are worth appreciating precisely because they're yours.`,
+
+    `your particular sense of humour. the way you always have something to the things you become interested in. the way you talk about something when you have a strong opinion about it. the fact that you get excited about fucking dogs. and cars. did I mention dogs? wait, not literally fucking dogs, thats weird. and wrong. and I'm rambling. you know what I mean though.`,
+
+    `i wonder whether anybody has ever told you how endearing you are when you're not trying to be. i hope somebody has. i hope you've had people in your life who paid attention to those things, who remembered the details you mentioned in passing, who wanted to understand you beyond the parts of yourself you chose to show them.`,
+
+    `because i think you deserve that. i think you deserve to be loved by somebody who is interested in your life even when nothing particularly exciting is happening in it. somebody who remembers what you like. somebody who notices when you're quiet. somebody who doesn't make you feel as though affection is something you have to earn by being entertaining, or attractive, or easy to be around. somebody who understands that being close to another person means occasionally encountering the less convenient parts of them, and who doesn't immediately mistake those parts for reasons to leave.`,
+
+    `i wanted to be that kind of person for you. i know how presumptuous that might sound, considering how little time we actually had. sometimes I feel like a fool thinking about it. there's so much i don't know about you. so much i never got the opportunity to learn. and i know that imagining how i might have cared for you is not the same as having done it.`,
+
+    `but i wanted the opportunity to find out. i wanted to learn what made you feel appreciated. i wanted to know what you needed when you were upset, and whether you preferred company or solitude when things became difficult. i wanted to know which little things could improve your day. i wanted to get them right.`,
+
+    `and i think that's what i mean when i say i wanted to take care of you. not to rescue you from anything. not to become indispensable. not to make you dependent on me, or to give you so much affection that you'd eventually feel obliged to return it. i wanted to make your life a little nicer, in whatever ways you'd have welcomed. i wanted you to feel considered.`,
+
+    `there's a particular sort of happiness in remembering something somebody likes and getting to surprise them with it. in hearing them mention a place they've wanted to visit and making a mental note. in noticing that they're cold and offering them your jacket before they have to ask. in learning the difference between when they want advice and when they simply want somebody to listen. in knowing exactly how they like to be cared for.`,
+
+    `i wanted those little opportunities. i wanted to be the person who remembered. and perhaps what makes all of this so difficult to articulate is that none of it feels particularly dramatic to me. i don't think love has to be an enormous event. sometimes i think it might just be the gradual accumulation of ordinary decisions. choosing to listen when you've heard the story before. choosing to be patient when somebody is having a difficult day. choosing to pay attention, even when there's nothing to be gained from it. choosing, again and again, to make room for another person.`,
+
+    `i wanted to make room for you. not just in the romantic parts of my life, but in the ordinary ones. i wanted to send you things that reminded me of you. i wanted to hear your opinions on things that didn't matter. i wanted to know which songs you'd been listening to, which places you'd been, what had happened since the last time we spoke.`,
+
+    `i wanted to become somebody you could tell the unimportant things to. because i don't think those things are unimportant at all. i think being somebody's first thought when something funny happens is a rather extraordinary privilege. i think being allowed into the uneventful parts of another person's life is a kind of intimacy that doesn't receive nearly enough attention.`,
+
+    `and i would have liked that with you. i would have liked to be ordinary with you. there are times when i wonder whether you ever saw any of this in me. whether you knew how much attention i was paying. whether you noticed how excited i was to see you, or how interested i was in the things you told me, even if sometimes you'd be closed off. whether you ever suspected that, behind all the teasing and the jokes and the occasional attempts at appearing indifferent, there was somebody becoming rather hopelessly fond of you.`,
+
+    `i don't know. and i don't want to rewrite our time together into something it wasn't. i know that affection doesn't guarantee compatibility. i know that being willing to love somebody in ways they want to be loved doesn't mean they'll want to be loved by you.`,
+
+    `i know that. but i wish you'd had the opportunity to know this part of me. not because it would necessarily have changed anything. just because it was there. because between the gap of all the things I said and all the things i pretended not to mean, there was a simple wish.`,
+
+    `i wanted to be good to you. i wanted to be somebody whose presence made you feel a little more at ease in the world. somebody you could be unapologetic with. somebody who would listen to you talk about the things you cared about, even when i knew absolutely nothing about them. somebody who would take the long way home with you, simply because neither of us particularly wanted the evening to end. and somebody who would learn the difference between cars I had never explicitly cared for, just to have one more thing to talk to you about.`,
+
+    `i think i could have been very content loving you like that. i don't know whether you would have been happy being loved by me. that's the part i never got to find out.`,
+
+    `and perhaps it's why i keep returning to these little details. because they remind me that what i felt wasn't entirely about wanting something from you. it was also about what i wanted to give. all the little acts of consideration. the attention. the time. the patience. the affection that would have eventually found its way into entirely ordinary afternoons. i had so much of it for you. i still don't quite know what to do with that.`,
+
+    `but i hope, wherever you find yourself, you have people who notice the things about you that i noticed. people who make you laugh when you don't feel like laughing. people who listen when you have something to say. people who understand that you're worth knowing beyond the first few months, beyond the excitement, beyond the easy parts.`,
+
+    `and hope you still get just as excited over things you like. and I hope nobody ever makes you feel silly for it. i hope somebody finds them as endearing as I do. and if you ever wondered what it was about you that made me want to stay, i think this is as close to an answer as i can give. it wasn't one extraordinary thing. it was just you, even in the little moments.`,
+
+    `and the fact that i wanted to be there for so many more of them.'
       ]
     }
   ],
