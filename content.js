@@ -338,7 +338,7 @@ window.ARCHIVE = {
 
     `and hope you still get just as excited over things you like. and I hope nobody ever makes you feel silly for it. i hope somebody finds them as endearing as I do. and if you ever wondered what it was about you that made me want to stay, i think this is as close to an answer as i can give. it wasn't one extraordinary thing. it was just you, even in the little moments.`,
 
-    `and the fact that i wanted to be there for so many more of them.'
+    `and the fact that i wanted to be there for so many more of them.`
       ]
     }
   ],
