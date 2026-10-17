@@ -11,9 +11,6 @@ window.ARCHIVE = {
       title: 'famous last words',
       excerpt: 'before there was anything to write about',
       body: [
-        ' “won’t you get attached?”',
-
-    '“no, i’d never date you.”',
 
     'i wonder if you remember that conversation on the roof. i do. though admittedly, i remember it rather differently now than i did at the time.',
 
