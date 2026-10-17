@@ -369,7 +369,7 @@ body: [
 "and i thought, perhaps, you did too."
 ]
 },
-        {
+{
   title: 'can you see me?',
   date: 'LETTER 005 / october 17',
   excerpt: 'i hope we give ourselves the chance to be surprised',
