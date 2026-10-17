@@ -370,9 +370,9 @@ body: [
 ]
 },
         {
-  title: "can you see me?",
-  date: "LETTER 005 / october 17,
-  excerpt: "i hope we give ourselves the chance to be surprised",
+  title: 'can you see me?',
+  date: 'LETTER 005 / october 17',
+  excerpt: 'i hope we give ourselves the chance to be surprised',
   body: [
     "i wonder how many things we miss simply because we aren't looking for them.",
     "not the obvious things. not the opportunities we knowingly pass up, or the people we meet and immediately decide we don't like. i mean the things that exist right in front of us, so ordinary in their existence that we never consider what they might become. the songs we skip before the chorus. the books we never pick up because the covers don't appeal to us. the people we decide we know before we've really given ourselves the chance to find out.",
