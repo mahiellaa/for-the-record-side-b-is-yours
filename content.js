@@ -211,8 +211,8 @@ window.ARCHIVE = {
       ]
     },
          {
-      "title": "can you see me?",
-      "date": "LETTER 005 / october 17",
+      "title": "can you see me? NVM CAME TO MY SENSES DIE DIE DIE DIE",
+      "date": "LETTER 005 / october 17. UPDATED OCTOBER 23",
       "excerpt": "i hope we give ourselves the chance to be surprised",
       "body": [
         "i wonder how many things we miss simply because we aren't looking for them.",
