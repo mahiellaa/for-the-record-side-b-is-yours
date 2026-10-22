@@ -1,6 +1,6 @@
 /* Archive data: five letters and all mixtape tracks. */
 window.ARCHIVE = {
-  "name": "for the record, side b is yours",
+  "name": "for the record, side b is yours/ CAME TO MY SENSES DIE DIE DIE DIE DIE",
   "subtitle": "did you ever listen to the playlist?",
   "intro": "i keep finding new ways to say the same thing",
   "entries": [
